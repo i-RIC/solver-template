@@ -80,7 +80,10 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration
-      run: build.bat
+      shell: cmd
+      run: |
+        cd ${{env.SOURCE_DIR}}
+        .\build.bat
 
     # @todo
     # - name: Test
