@@ -9,7 +9,7 @@ Create an account on github and email us a notification of your user name.  We'l
 
 ## Create directory c:\iricdev\lib and extract iricsdk-x.x.x.zip into it  
 
-Download the latest [iricsdk](https://github.com/i-RIC/iriclib/releases/latest) (currently iricsdk-0.2.9.zip)
+Download the latest [iricsdk](https://github.com/i-RIC/iriclib_v4/releases/latest) (currently iricsdk-4.0.25.zip)
 Open a command prompt window and execute the following commands:
 
 ```
@@ -17,8 +17,8 @@ Open a command prompt window and execute the following commands:
 > cd \
 > mkdir iricdev\lib
 > cd iricdev\lib
-> curl -LO https://github.com/i-RIC/iriclib/releases/download/v0.2.9/iricsdk-0.2.9.zip
-> 7z x iricsdk-0.2.9.zip
+> curl -LO https://github.com/i-RIC/iriclib_v4/releases/download/v4.0.25/iricsdk-4.0.25.7z
+> 7z x iricsdk-4.0.25.7z
 ```
 
 ## Setup ssh key to authenticate
