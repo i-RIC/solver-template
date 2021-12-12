@@ -212,31 +212,31 @@ At this point you can either open the project within Visual Studio
 > .\Example.sln
 ```
      
-- Change the 'Solution Configurations' dialog from Debug to RelWithDebInfo
+- Change the 'Solution Configurations' dialog from Debug to Release
      
 - Build->Build Solution (or press F7)
      
 ```
 Build started...
-1>------ Build started: Project: ZERO_CHECK, Configuration: Debug x64 ------
+1>------ Build started: Project: ZERO_CHECK, Configuration: Release x64 ------
 1>Checking Build System
-2>------ Build started: Project: Example, Configuration: Debug x64 ------
+2>------ Build started: Project: Example, Configuration: Release x64 ------
 2>Compiling with Intel® Fortran Compiler Classic 2021.2.0 [Intel(R) 64]...
 2>sortEdges.f90
 2>in_array2.f90
 [...]
-2>Example.dir\Debug\Example.exe.embed.manifest.res
-2>LINK : C:\Users\charlton\source\repos\solver.tutorial\_build\Debug\Example.exe not found or not built by the last incremental link; performing full link
+2>Example.dir\Release\Example.exe.embed.manifest.res
+2>LINK : C:\Users\charlton\source\repos\solver.tutorial\_build\Release\Example.exe not found or not built by the last incremental link; performing full link
 2>Embedding manifest...
 2>Microsoft (R) Manifest Tool
 2>Copyright (c) Microsoft Corporation.
 2>All rights reserved.
 2>
-2>Build log written to  "file://C:\Users\charlton\source\repos\solver.tutorial\_build\Example.dir\Debug\BuildLog.htm"
+2>Build log written to  "file://C:\Users\charlton\source\repos\solver.tutorial\_build\Example.dir\Release\BuildLog.htm"
 2>Example - 0 error(s), 0 warning(s)
-3>------ Build started: Project: ALL_BUILD, Configuration: Debug x64 ------
+3>------ Build started: Project: ALL_BUILD, Configuration: Release x64 ------
 3>Building Custom Rule C:/Users/charlton/source/repos/solver.tutorial/CMakeLists.txt
-4>------ Skipped Build: Project: INSTALL, Configuration: Debug x64 ------
+4>------ Skipped Build: Project: INSTALL, Configuration: Release x64 ------
 4>Project not selected to build for this solution configuration 
 ========== Build: 3 succeeded, 0 failed, 0 up-to-date, 1 skipped ==========
 ```
@@ -244,8 +244,8 @@ Build started...
 - Right-Click on INSTALL->Build
 ```
 Build started...
-1>------ Build started: Project: INSTALL, Configuration: Debug x64 ------
-1>-- Install configuration: "Debug"
+1>------ Build started: Project: INSTALL, Configuration: Release x64 ------
+1>-- Install configuration: "Release"
 1>-- Installing: C:/Users/charlton/source/repos/solver.tutorial/_build/INSTALL/bin/Example.exe
 1>-- Installing: C:/Users/charlton/source/repos/solver.tutorial/_build/INSTALL/bin/definition.xml
 ========== Build: 1 succeeded, 0 failed, 3 up-to-date, 0 skipped ==========
@@ -254,8 +254,8 @@ Build started...
 Or build from the command line
 
 ```
-> cmake --build . --config RelWithDebInfo
-> cmake --build . --config RelWithDebInfo --target install
+> cmake --build . --config Release
+> cmake --build . --config Release --target install
 ```
 
 ## Setup package directory
