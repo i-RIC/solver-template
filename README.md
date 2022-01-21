@@ -7,9 +7,9 @@ Create an account on github and email us a notification of your user name.  We'l
   [https://github.com/](https://github.com/)
 
 
-## Create directory c:\iricdev\lib and extract iricsdk-x.x.x.zip into it  
+## Create directory c:\iricdev\lib and extract iricsdk-x.x.x.7z into it  
 
-Download the latest [iricsdk](https://github.com/i-RIC/iriclib_v4/releases/latest) (currently iricsdk-4.0.25.zip)
+Download the latest [iricsdk](https://github.com/i-RIC/iriclib_v4/releases/latest) (currently iricsdk-4.0.26.7z)
 Open a command prompt window and execute the following commands:
 
 ```
@@ -17,8 +17,8 @@ Open a command prompt window and execute the following commands:
 > cd \
 > mkdir iricdev\lib
 > cd iricdev\lib
-> curl -LO https://github.com/i-RIC/iriclib_v4/releases/download/v4.0.25/iricsdk-4.0.25.7z
-> 7z x iricsdk-4.0.25.7z
+> curl -LO https://github.com/i-RIC/iriclib_v4/releases/download/v4.0.25/iricsdk-4.0.26.7z
+> 7z x iricsdk-4.0.26.7z
 ```
 
 ## Setup ssh key to authenticate
@@ -93,8 +93,8 @@ $ git commit -m"added solver-template files"
 
 ## Update CMakeLists.txt
 
-Modify CMakeLists.txt file for the solver
-Replace all occurrences of <BASENAME> with the basename of the executable you want to create (ie Example will create Example.exe).
+Modify CMakeLists.txt file for the solver.
+Replace all occurrences of &lt;BASENAME&gt; with the basename of the executable you want to create (ie Example will create Example.exe).
   
 ```
 $ code -n CMakeLists.txt
